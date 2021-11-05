@@ -30,6 +30,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   gem 'rspec-rails', '~> 5.0.2'
+  # Rspec testing the speed of execution
+  gem 'rspec-benchmark'
   # Code quality
   gem 'rubocop', require: false
   # Rubocop Rails extension
@@ -42,8 +44,8 @@ group :development, :test do
   gem 'rubocop-rspec', require: false
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  # Testing the speed of execution
-  gem 'benchmark'
+  # To create a factory
+  gem 'factory_bot_rails'
 end
 
 group :development do
